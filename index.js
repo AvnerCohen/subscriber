@@ -23,7 +23,7 @@ let allowedOrigins = process.env.SUBSCRIBER_ALLOWED_CORS_ORIGINS.split(",")
 let logDirectory = path.join(__dirname, 'log')
 
 const mailOptions = {
-  to: process.env.SUBSCRIBER_TO_EMAIL,
+  to: process.env.SUBSCRIBER_TO_EMAIL.split(","),
   from: process.env.SUBSCRIBER_FROM_EMAIL,
   subject: '',
   html: ''
