@@ -1,0 +1,16 @@
+{
+  "name": "subscriber",
+  "version": "1.0.0",
+  "description": "Simple Endpoint that collects emails from landing page and sends them to a target",
+  "main": "index.js",
+  "author": "Avner Cohen",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@sendgrid/mail": "6.5.1",
+    "dotenv": "8.2.0",
+    "express": "4.17.1",
+    "morgan": "1.9.1",
+    "pm2": "4.2.3"
+  }
+}
