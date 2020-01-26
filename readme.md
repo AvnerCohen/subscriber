@@ -8,7 +8,7 @@ Current setup assumes sendgrid setup, but should be easly replaced with any othe
 
 ## Usage
 
-Update configuration on .env (see samlpe data in .env.sample)
+Create configuration on .env [Sample Config](.env.sample)
 
 ## Start with PM2
 
@@ -23,7 +23,7 @@ pm2 start index.js
 pm2 logs
 ```
 
-## Manual testing 
+## Manual testing
 
 ```sh
 curl -H "Content-Type: application/json" -X POST "http://127.0.0.1:3111/signup" -d '{"name":"moshe", "email":"marko@bepita.com", "key": "b3956f6fa03155e42e5fc2755d46bcfb"}'
